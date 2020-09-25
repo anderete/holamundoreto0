@@ -9,7 +9,7 @@ public class ViewImplementation implements View {
      * @param greeting A String containing the greeting to be shown.
      */
     @Override
-    public void showGreeting (String Greeting){
-        System.out.println(Greeting);
+    public void showGreeting (String greeting){
+        System.out.println(greeting);
     }
 }

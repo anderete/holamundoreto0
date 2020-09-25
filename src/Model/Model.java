@@ -12,7 +12,7 @@ package Model;
 public interface Model {
     /**
      * Gets a greeting in UI.
-     * @return 
+     * @return A greeting.
      */
     public String getGreeting();
 }
