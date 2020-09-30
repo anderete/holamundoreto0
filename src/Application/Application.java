@@ -1,8 +1,6 @@
 package Application;
 import Model.ModelFactory;
-import Model.ModelImplementation;
 import View.ViewFactory;
-import View.ViewImplementation;
 import Control.Controler;
 import java.util.ResourceBundle;
 
@@ -15,6 +13,7 @@ public class Application {
     public static void main(String[] args) {
         ViewFactory viewFactory = new ViewFactory();
         ModelFactory modelFactory = new ModelFactory();
+        
         ResourceBundle properties = ResourceBundle.getBundle("Model.Properties");
         
         int viewInstance = Integer.valueOf(properties.getString("viewInstance"));

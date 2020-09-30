@@ -1,10 +1,12 @@
 package Model;
 
+import control.DAO;
+
 public class ModelImplementation implements Model {
    @Override
     public String getGreeting (){
-        String greeting = "Hola Mundo";
+        DAO dao = new DAO();
         
-        return greeting;
+        return dao.getGreetingBD();
     }
 }
