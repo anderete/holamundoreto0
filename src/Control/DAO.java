@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
 
 /**
  * Data Access Object.
- * @author Martin Angulo
+ * @author aitor
  */
 public class DAO {
     private Statement stmt = null;
