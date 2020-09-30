@@ -1,14 +1,13 @@
 package Control;
 
-import Model.ModelImplementation;
-import View.ViewImplementation;
+import Model.Model;
+import View.View;
 
 
 public class Controler {
 
-    public Controler(ViewImplementation viewImplementation, ModelImplementation modelImplementation) {
-        String greeting = modelImplementation.getGreeting();
-        viewImplementation.showGreeting(greeting);
+    public void run(View view, Model model) {
+        view.showGreeting(model.getGreeting());
     }
     
 }
