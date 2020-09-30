@@ -5,7 +5,10 @@
  */
 package View;
 
+import java.awt.BorderLayout;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.WindowConstants;
 
 /**
  *
@@ -14,6 +17,14 @@ import javax.swing.JFrame;
 public class ViewImplementationGUI implements View{
     @Override
     public void showGreeting (String greeting){
-        JFrame window = new JFrame();
+        JFrame frame = new JFrame("Window");
+        frame.setLayout(new BorderLayout());
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setSize(250,100);
+
+        final JLabel label = new JLabel();
+        label.setText(greeting);
+        frame.add(label);
+        frame.setVisible(true);
     }
 }
