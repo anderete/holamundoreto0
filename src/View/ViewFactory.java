@@ -15,6 +15,8 @@ public class ViewFactory {
         switch(option){
             case 1:
                 return new ViewImplementation();
+            case 2:
+                return new ViewImplementationGUI();
             default:
                 return null;
         }
