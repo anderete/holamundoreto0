@@ -14,14 +14,20 @@ import javax.swing.WindowConstants;
  * @author aitor
  */
 public class ViewImplementationGUI implements View{
+    JLabel label;
+    
     @Override
     public void showGreeting (String greeting){
         JFrame frame = new JFrame("Window");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setSize(250,100);
 
-        final JLabel label = new JLabel(greeting);
+        label = new JLabel(greeting);
         frame.getContentPane().add(label);
         frame.setVisible(true);
+    }
+    
+    public JLabel getLabel(){
+        return label;
     }
 }

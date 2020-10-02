@@ -19,7 +19,6 @@ public class ModelFactoryTest {
      */
     @Test
     public void testGetModel() {
-        System.out.println("getModel() Test");
         int option = 1;
         ModelFactory instance = new ModelFactory();
         Model expResult = new ModelImplementation();

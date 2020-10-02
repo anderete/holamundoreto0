@@ -5,15 +5,11 @@
  */
 package View;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * Tests the ViewFactory class methods
  * @author aitor
  */
 public class ViewFactoryTest {
@@ -24,14 +20,13 @@ public class ViewFactoryTest {
      */
     @Test
     public void testGetViewFirstInstanceTest() {
-        System.out.println("getView");
         int option = 1;
         ViewFactory instance = new ViewFactory();
-        View expResult = new ViewImplementation();
         View result = instance.getView(option);
         
         assertTrue("Returns an unexpected instance of View",
-                expResult.getClass().equals(result.getClass()));
+                result instanceof View);
+        assertNotNull("The returned object is null", result);
         
     }
     
@@ -41,14 +36,13 @@ public class ViewFactoryTest {
      */
     @Test
     public void testGetViewSeccondInstanceTest() {
-        System.out.println("getView");
         int option = 2;
         ViewFactory instance = new ViewFactory();
-        View expResult = new ViewImplementationGUI();
         View result = instance.getView(option);
         
         assertTrue("Returns an unexpected instance of View",
-                expResult.getClass().equals(result.getClass()));
+                result instanceof View);
+        assertNotNull("The returned object is null", result);
         
     }
     

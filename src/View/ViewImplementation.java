@@ -10,6 +10,6 @@ public class ViewImplementation implements View {
      */
     @Override
     public void showGreeting (String greeting){
-        System.out.println(greeting);
+        System.out.print(greeting + "\n");
     }
 }

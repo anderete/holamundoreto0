@@ -81,7 +81,7 @@ public class DAO {
      * @return A greeting.
      */
     public String getGreetingBD() {
-        String greeting = "no funciona genio";
+        String greeting = null;
         try{
             stmt = Connect().createStatement();
             stmt.execute("select greeting from greeting");

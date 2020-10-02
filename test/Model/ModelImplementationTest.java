@@ -19,10 +19,10 @@ public class ModelImplementationTest {
      */
     @Test
     public void testGetGreeting() {
-        System.out.println("getGreeting() Test");
         ModelImplementation instance = new ModelImplementation();
         String expResult = "Hola Mundo";
         String result = instance.getGreeting();
+        
         assertEquals("Return an unexpected message", expResult, result);
     }
     
