@@ -1,4 +1,4 @@
-package Model;
+package model;
 
 /**
  * Creates Model object instances.
@@ -7,7 +7,7 @@ package Model;
 public class ModelFactory {
     /**
      * Creates an instance of the Model object.
-     * @param option Specifies the returnes instance.
+     * @param option Specifies the returned Model instance.
      * @return A Model instance.
      */
     public Model getModel(int option){

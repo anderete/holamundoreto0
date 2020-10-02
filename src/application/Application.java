@@ -1,12 +1,12 @@
-package Application;
-import Model.ModelFactory;
-import View.ViewFactory;
-import Control.Controler;
+package application;
+
+import model.ModelFactory;
+import view.ViewFactory;
+import control.Controler;
 import java.util.ResourceBundle;
 
 /**
  * This is the application class for this hello world mvc app.
- * Saludos 
  */
 public class Application {
     

@@ -1,4 +1,5 @@
-package View;
+package view;
+
 /**
  * View implementation to show greeting in a text type UI.
  * @author Ander Vicente
@@ -10,6 +11,6 @@ public class ViewImplementation implements View {
      */
     @Override
     public void showGreeting (String greeting){
-        System.out.println(greeting);
+        System.out.print(greeting + "\n");
     }
 }

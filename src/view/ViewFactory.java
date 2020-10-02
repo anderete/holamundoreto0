@@ -1,4 +1,4 @@
-package View;
+package view;
 
 /**
  * Creates View object instances.
@@ -14,9 +14,9 @@ public class ViewFactory {
     public View getView(int option){
         switch(option){
             case 1:
-                return new ViewImplementation();
+                return new ViewImplementation(); //Text UI
             case 2:
-                return new ViewImplementationGUI();
+                return new ViewImplementationGUI(); //GUI
             default:
                 return null;
         }

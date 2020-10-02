@@ -1,7 +1,7 @@
-package Control;
+package control;
 
-import Model.Model;
-import View.View;
+import model.Model;
+import view.View;
 
 /**
  * Intermediary between the View and the Model.
@@ -10,7 +10,7 @@ import View.View;
 public class Controler {
     
     /**
-     * Gets the View and the Model and shows the output.
+     * Uses a View and a Model objects to show a greeting
      * @param view Defines the UI (text or GUI).
      * @param model Defines the greeting.
      */
