@@ -27,7 +27,7 @@ public class DAO {
      */
     public DAO() {
         try {
-            this.configFile = ResourceBundle.getBundle("Control.BDConfig");
+            this.configFile = ResourceBundle.getBundle("control.BDConfig");
             this.user = configFile.getString("DBUser");
             this.password = configFile.getString("DBPass");
             this.connectionString = configFile.getString("Conn");
@@ -40,7 +40,6 @@ public class DAO {
 
     /**
      * Opens a connection tothe DB
-     * @return 
      */
     public void openConnection() {
         try {

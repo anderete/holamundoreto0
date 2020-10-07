@@ -10,11 +10,15 @@ import java.util.ResourceBundle;
  */
 public class Application {
     
+    /**
+     * Main method of the application class for this hello world mvc app.
+     * @param args 
+     */
     public static void main(String[] args) {
         ViewFactory viewFactory = new ViewFactory();
         ModelFactory modelFactory = new ModelFactory();
         
-        ResourceBundle properties = ResourceBundle.getBundle("Model.Properties");
+        ResourceBundle properties = ResourceBundle.getBundle("model.Properties");
         
         int viewInstance = Integer.valueOf(properties.getString("viewInstance"));
         int modelInstance = Integer.valueOf(properties.getString("modelInstance"));
