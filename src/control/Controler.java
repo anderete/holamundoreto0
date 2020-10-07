@@ -15,7 +15,12 @@ public class Controler {
      * @param model Defines the greeting.
      */
     public void run(View view, Model model) {
-        view.showGreeting(model.getGreeting());
+        try{
+            view.showGreeting(model.getGreeting());
+        } catch(Exception e){
+            System.out.println("ERROR: The specified View or Model instances in 'Properties' are not supported.");
+        }
+        
     }
     
 }
